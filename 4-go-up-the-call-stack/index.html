@@ -9,10 +9,18 @@
   <body>
     <a href="..">Go Back</a>
 
+    <form id="answer-check-form">
+      <span style="display: none" data-answer-id="4"></span>
+      <label>Answer:</label><input id="answer-check-input" autocomplete="off" />
+      <button type="submit" id="answerCheckSubmit">Check</button>
+      <span id="answer-check-result"></span>
+    </form>
+    <script src="../answer-check.js" type="module"></script>
+
     <p>
       Open up the devtools to find the secret.<br />
       Mac: cmd-option-i<br />
-      Windows/Linux: ctrl-alt-i<br />
+      Windows/Linux: ctrl-shift-i<br />
       <br />
       Then refresh the page.<br />
       <br />
@@ -36,6 +44,7 @@
         alt="screenshot showing where the Call Stack is in the devtools"
       />
     </p>
+
     <script src="./index.js" type="module"></script>
   </body>
 </html>

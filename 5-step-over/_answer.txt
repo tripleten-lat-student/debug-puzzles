@@ -1,3 +1,1 @@
-layers
-
-Though I think this answer is kind of boring. Open to changing it; just update the obfuscated text with the full string with that part replaced.
+inchworm

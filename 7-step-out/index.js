@@ -1,7 +1,6 @@
 import { getSecret } from "./secrets.js";
 
 function montyHall() {
-  debugger;
   // Choose wisely — But you can always back out and try again.
   doorA();
   doorB();
@@ -9,6 +8,8 @@ function montyHall() {
 }
 
 function doorA() {
+  debugger;
+
   //prettier-ignore
   const secret = getSecret();
 
