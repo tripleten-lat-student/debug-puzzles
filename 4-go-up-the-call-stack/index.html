@@ -20,7 +20,16 @@
       first entry in the Call Stack to jump to where it's really paused. This
       usually only happens the first time we pause on a given page.<br />
       <br />
-      For this page, use the Call Stack section of the dev tools: <br />
+      For this page, use the Call Stack section of the dev tools.<br />
+      Note that the call stack in the dev tools is "upside down" compared to how
+      people usually refer to call stack directions — going "up" the call stack
+      means going towards the first function that was called, away from the most
+      recent. In the devtools, the first function is listed at the bottom, so
+      going "up" means going further down the list shown there.<br />
+      This is backwards mainly because you usually care about seeing the bottom
+      of the call stack (most recently called function) first.<br />
+      If the direction you read somewhere is confusing, you'll have to just
+      infer from context what they mean.
       <img
         style="zoom: 50%"
         src="images/screenshot.png"
