@@ -16,37 +16,43 @@
           including the "<b>Step out</b>" button. Check behind each door to find
           the secret!
         </p>
+        <img
+          src="images/screenshot.png"
+          alt="screenshot showing where the 'step out' button is in the devtools"
+        />
       </main>
       <aside>
-        <h2>General Instructions</h2>
-        <p>
-          To open DevTools, you can right-click on the page and choose the
-          "Inspect" option, or use the keyboard shortcut.
-        </p>
-        <ul>
-          <li>Mac: Cmd-Option-i</li>
-          <li>Windows/Linux: Ctrl-Shift-i</li>
-        </ul>
-        <p>Then refresh the page with the debugger open.</p>
-        <h2>Notes</h2>
-        <ul>
+        <h2>Tips & Tricks</h2>
+        <ol>
           <li>
-            If the debugger pauses without showing you the correct code, click
-            the first entry in the Call Stack to jump to where it's really
-            paused. This usually only happens the first time we pause on a given
-            page.
+            <p>
+              To open DevTools, you can right-click on the page and choose the
+              "Inspect" option, or use the keyboard shortcut.
+            </p>
+            <ul>
+              <li>Mac: Cmd-Option-i</li>
+              <li>Windows/Linux: Ctrl-Shift-i</li>
+            </ul>
+            <p>Then refresh the page with the debugger open.</p>
+          </li>
+
+          <li>
+            <p>
+              If the debugger pauses without showing you the correct code, click
+              the first entry in the Call Stack to jump to where it's really
+              paused. This usually only happens the first time we pause on a
+              given page.
+            </p>
           </li>
           <li>
-            If it pauses on code that is obviously not part of the puzzle, this
-            is probably due to chrome extensions. Just hit play, or open the
-            page in an incognito window.
+            <p>
+              If it pauses on code that is obviously not part of the puzzle,
+              this is probably due to chrome extensions. Just hit play, or open
+              the page in an incognito window.
+            </p>
           </li>
-        </ul>
+        </ol>
       </aside>
-      <img
-        src="images/screenshot.png"
-        alt="screenshot showing where the 'step out' button is in the devtools"
-      />
     </div>
 
     <script src="./index.js" type="module"></script>

@@ -11,8 +11,10 @@ body {
 }
 
 img {
-  margin: 40px auto 0;
+  margin: 40px auto 50px;
   zoom: 50%;
+  max-width: 80%;
+  display: block;
 }
 
 p {
@@ -30,9 +32,7 @@ h2 {
   margin: 0 0 12px;
 }
 
-li {
-  margin-bottom: 6px;
-}
+
 
 aside {
   background-color: #fafafa;
@@ -46,4 +46,18 @@ aside li,
 aside p {
   font-size: 12px;
   max-width: 80%;
+}
+
+label {
+  margin: 12px;
+  margin-top: 12px;
+}
+
+input {
+  border: 1px solid black;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 12px 0;
 }
