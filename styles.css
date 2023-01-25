@@ -1,15 +1,49 @@
 body {
-  margin: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
-  line-height: 150%;
+  margin: 20px;
+}
+
+.page {
+  margin: 0 auto;
+  min-width: 600px;
+  max-width: 900px;
 }
 
 img {
-  margin: 20px;
+  margin: 40px auto 0;
+  zoom: 50%;
 }
 
 p {
-  width: 60%;
+  font-size: 16px;
+  margin: 0 0 12px;
+  line-height: 150%;
 }
 
+.lead {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+aside {
+  background-color: #fafafa;
+  padding: 12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 40px 0 0;
+}
+
+aside li,
+aside p {
+  font-size: 12px;
+  max-width: 80%;
+}

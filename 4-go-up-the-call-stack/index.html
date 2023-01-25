@@ -4,35 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <p>
-      Open up DevTools to find a secret password.<br />
-      Mac: Cmd-Option-I<br />
-      Windows/Linux: Ctrl-Shift-I<br />
-      <br />
-      Then refresh the page.<br />
-      <br />
-      If the debugger pauses without showing you the correct code, click the first 
-      entry in the Call Stack to jump to where it's really paused. This usually only 
-      happens the first time we pause on a given page.
-      <br />
-      For this page, use the Call Stack section. Note that the call stack in the debugger 
-      is "upside down" if compared to the way people usually refer to call stack directions. 
-      Going "up" the call stack means going towards the first function that was called and 
-      away from the most recent. In the debugger, the first function is listed at the bottom, 
-      so going "up" means going further down the list shown there.
-      <br />
-      Usually, we care about seeing the bottom of the call stack (most recently called function) 
-      first. If the direction you read somewhere is confusing, you can infer from context what they mean.
+    <div class="page">
+      <main>
+        <h1>Puzzle Part 1. The Call Stack</h1>
+        <p class="lead">
+          Open the Sources panel in DevTools to find the secret password!
+        </p>
+        <p>
+          For this page, use the Call Stack section. Note that the call stack in
+          the debugger is "upside down" if compared to the way people usually
+          refer to call stack directions. Going "up" the call stack means going
+          towards the first function that was called and away from the most
+          recent. In the debugger, the first function is listed at the bottom,
+          so going "up" means going further down the list shown there.
+        </p>
+        <p>
+          Usually, we care about seeing the bottom of the call stack (most
+          recently called function) first. If the direction you read somewhere
+          is confusing, you can infer from context what they mean.
+        </p>
+      </main>
+      <aside>
+        <h2>General Instructions</h2>
+        <p>
+          To open DevTools, you can right-click on the page and choose the
+          "Inspect" option, or use the keyboard shortcut.
+        </p>
+        <ul>
+          <li>Mac: Cmd-Option-i</li>
+          <li>Windows/Linux: Ctrl-Shift-i</li>
+        </ul>
+        <p>Then refresh the page with the debugger open.</p>
+        <h2>Notes</h2>
+        <ul>
+          <li>
+            If the debugger pauses without showing you the correct code, click
+            the first entry in the Call Stack to jump to where it's really
+            paused. This usually only happens the first time we pause on a given
+            page.
+          </li>
+          <li>
+            If it pauses on code that is obviously not part of the puzzle, this
+            is probably due to chrome extensions. Just hit play, or open the
+            page in an incognito window.
+          </li>
+        </ul>
+      </aside>
+
       <img
-        style="zoom: 50%"
         src="images/screenshot.png"
         alt="screenshot showing where the Call Stack is in the devtools"
       />
-    </p>
+    </div>
 
     <script src="./index.js" type="module"></script>
   </body>

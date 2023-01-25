@@ -4,28 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <p>
-      Open up DevTools to find a secret password.<br />
-      Mac: Cmd-Option-I<br />
-      Windows/Linux: Ctrl-Shift-I<br />
-      <br />
-      Then refresh the page.<br />
-      <br />
-      If the debugger pauses without showing you the correct code, click the first 
-      entry in the Call Stack to jump to where it's really paused. This usually only 
-      happens the first time we pause on a given page.
-      <br />
-      For this page, use the "Step out" button. <br />
+    <div class="page">
+      <main>
+        <h1>Puzzle Part 4. Stepping out</h1>
+        <p class="lead">
+          For this page, you'll need to use all the powers of the debugger,
+          including the "<b>Step out</b>" button. Check behind each door to find
+          the secret!
+        </p>
+      </main>
+      <aside>
+        <h2>General Instructions</h2>
+        <p>
+          To open DevTools, you can right-click on the page and choose the
+          "Inspect" option, or use the keyboard shortcut.
+        </p>
+        <ul>
+          <li>Mac: Cmd-Option-i</li>
+          <li>Windows/Linux: Ctrl-Shift-i</li>
+        </ul>
+        <p>Then refresh the page with the debugger open.</p>
+        <h2>Notes</h2>
+        <ul>
+          <li>
+            If the debugger pauses without showing you the correct code, click
+            the first entry in the Call Stack to jump to where it's really
+            paused. This usually only happens the first time we pause on a given
+            page.
+          </li>
+          <li>
+            If it pauses on code that is obviously not part of the puzzle, this
+            is probably due to chrome extensions. Just hit play, or open the
+            page in an incognito window.
+          </li>
+        </ul>
+      </aside>
       <img
-        style="zoom: 50%"
         src="images/screenshot.png"
         alt="screenshot showing where the 'step out' button is in the devtools"
       />
-    </p>
+    </div>
 
     <script src="./index.js" type="module"></script>
   </body>
