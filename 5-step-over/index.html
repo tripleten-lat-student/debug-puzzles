@@ -20,6 +20,13 @@
           src="images/screenshot.png"
           alt="screenshot showing where the 'step over' button is in the devtools"
         />
+        <form id="answer-check-form">
+          <span style="display: none" data-answer-id="5"></span>
+          <label
+            >Enter your answer here: <input id="answer-check-input" type="text"
+          /></label>
+          <span id="answer-check-result"></span>
+        </form>
       </main>
       <aside>
         <h2>Tips & Tricks</h2>
@@ -56,5 +63,6 @@
     </div>
 
     <script src="./index.js" type="module"></script>
+    <script src="../answer-check.js" type="module"></script>
   </body>
 </html>
