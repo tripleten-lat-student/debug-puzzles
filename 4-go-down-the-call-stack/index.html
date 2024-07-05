@@ -13,15 +13,13 @@
         <h1>Puzzle Part 1. The Call Stack</h1>
         <p>Open the Sources panel in DevTools to find the secret password!</p>
         <p>
-          For this page, use the Call Stack section. Note that the call stack in
-          the debugger is "upside down" compared to how people usually refer to
-          call stack directions. Going "up" the call stack means going towards
-          the first function that was called and away from the most recent. In
-          the debugger, the first function is listed at the bottom, so going
-          "up" means going further down the list shown there.
+          For this page, use the Call Stack section. Going "down" the call stack
+          means going towards the first function that was called (shown at the
+          bottom of the list) and away from the most recent function called
+          (shown at the top of the list).
         </p>
         <p>
-          Usually, we care about seeing the bottom of the call stack (the most
+          Usually, we care about seeing the top of the call stack (the most
           recently called function) first.
         </p>
 
@@ -31,9 +29,10 @@
         />
         <form id="answer-check-form">
           <span style="display: none" data-answer-id="4"></span>
-          <label
-            >Enter your answer here: <input id="answer-check-input" type="text"
-          /></label>
+          <label>
+            Enter your answer here:
+            <input id="answer-check-input" type="text" />
+          </label>
           <span id="answer-check-result"></span>
         </form>
       </main>
