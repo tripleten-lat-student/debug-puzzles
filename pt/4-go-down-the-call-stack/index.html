@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Desafios de Depuração: A Pilha de Chamadas (Call Stack)</title>
+  </head>
+  <body>
+    <div class="page">
+      <main>
+        <h1>Desafio Parte 1. A Pilha de Chamadas (Call Stack)</h1>
+        <p>
+          Abra o painel Fontes (ou Sources, em inglês) no DevTools para
+          encontrar a senha secreta!
+        </p>
+        <p>
+          Para esta página, use a seção Pilha de Chamadas (Call Stack). "Descer"
+          a pilha de chamadas significa ir em direção à primeira função que foi
+          chamada (mostrada na na parte inferior da lista) e se afastar da
+          função mais recente (mostrada no topo da lista).
+        </p>
+        <p>
+          Normalmente, priorizamos ver o topo da pilha de chamadas (a função
+          chamada mais recentemente).
+        </p>
+
+        <img
+          src="images/screenshot.png"
+          alt="captura de tela mostrando onde a 'Pilha de chamadas (Call Stack)' está no DevTools"
+        />
+        <form id="answer-check-form">
+          <span style="display: none" data-answer-id="4"></span>
+          <label>
+            Digite sua resposta aqui:
+            <input id="answer-check-input" type="text" />
+          </label>
+          <span id="answer-check-result"></span>
+        </form>
+      </main>
+
+      <aside>
+        <h2>Dicas e truques</h2>
+        <ol>
+          <li>
+            <p>
+              Para abrir o DevTools, você pode clicar com o botão direito na
+              página e escolher a opção "Inspecionar", ou usar o atalho de
+              teclado:
+            </p>
+            <ul>
+              <li>Mac: <b>Cmd + Option + i</b></li>
+              <li>Windows/Linux: <b>Ctrl + Shift + i</b></li>
+            </ul>
+            <p>Depois, atualize a página com o debugger aberto.</p>
+          </li>
+
+          <li>
+            <p>
+              Se o debugger pausar sem mostrar o código correto, clique na
+              primeira entrada da Pilha de chamadas para ir até onde ele
+              realmente está pausado. Isso geralmente só acontece na primeira
+              vez em que pausamos em uma determinada página.
+            </p>
+          </li>
+          <li>
+            <p>
+              Se ele pausar em um código que claramente não faz parte do
+              desafio, isso provavelmente é causado por extensões do Chrome.
+              Basta clicar em "play" ou abrir a página em uma janela anônima.
+            </p>
+          </li>
+        </ol>
+      </aside>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+    <script src="../answer-check.js" type="module"></script>
+  </body>
+</html>
