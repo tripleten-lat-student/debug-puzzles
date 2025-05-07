@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Rompecabezas del depurador: Step into</title>
+  </head>
+  <body>
+    <div class="page">
+      <main>
+        <h1>Rompecabezas Parte 3. Step into</h1>
+        <p>
+          ¡Abre la pestaña Fuentes en DevTools para encontrar la contraseña
+          secreta!
+        </p>
+        <p>
+          Para esta página, empieza por "<b>stepping into</b>" de la función
+          getSecret(). - Después tendrás que detenerte en la sentencia
+          console.log() antes de salir de la función. Establecer un breakpoint
+          puede ayudarte con esto.
+        </p>
+        <img
+          src="images/screenshot.png"
+          alt="captura de pantalla que muestra dónde está el botón 'Step into' en las herramientas de desarrollo"
+        />
+        <form id="answer-check-form">
+          <span style="display: none" data-answer-id="6"></span>
+          <label
+            >Introduce tu respuesta aquí:
+            <input id="answer-check-input" type="text"
+          /></label>
+          <span id="answer-check-result"></span>
+        </form>
+      </main>
+      <aside>
+        <h2>Consejos y trucos</h2>
+        <ol>
+          <li>
+            <p>
+              Para abrir DevTools, puedes hacer clic derecho en la página y
+              elegir la opción "Inspeccionar", o utilizar el atajo de teclado.
+            </p>
+            <ul>
+              <li>Mac: <b>Cmd + Option + i</b></li>
+              <li>Windows/Linux: <b>Ctrl + Shift + i</b></li>
+            </ul>
+            <p>Luego actualiza la página con el depurador abierto.</p>
+          </li>
+
+          <li>
+            <p>
+              Si el depurador se detiene sin mostrarte el código correcto, haz
+              clic en la primera entrada en la pila de llamadas para saltar
+              adonde realmente se detuvo. Esto suele ocurrir la primera vez que
+              nos detenemos en una determinada página.
+            </p>
+          </li>
+          <li>
+            <p>
+              Si se detiene en un código que obviamente no forma parte del
+              rompecabezas, probablemente se deba a las extensiones de Chrome.
+              Solo tienes que pulsar play o abrir la página en una ventana de
+              incógnito.
+            </p>
+          </li>
+        </ol>
+      </aside>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+    <script src="../answer-check.js" type="module"></script>
+  </body>
+</html>
