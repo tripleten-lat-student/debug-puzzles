@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Debugger Puzzles: pausar en las excepciones</title>
+  </head>
+  <body>
+    <p>
+      Abre DevTools para encontrar la contraseña secreta.<br />
+      Mac: Cmd-Option-i<br />
+      Windows/Linux: Ctrl-Shift-i<br />
+      <br />
+      Luego, actualiza la página.<br />
+      <br />
+      Si el depurador se detiene sin mostrarte el código correcto, haz clic en
+      la primera entrada de la pila de llamadas para saltar a donde realmente
+      está en pausa. Por lo general, esto solo ocurre la primera vez que hacemos
+      una pausa en una página determinada.
+      <br />
+      Para esta página en concreto, asegúrate de activar "Pausar en excepciones"
+      y, a continuación, vuelve a actualizar la página.<br />
+      <img
+        style="zoom: 50%"
+        src="images/screenshot.png"
+        alt="Captura de pantalla que muestra dónde está la 'pausa en excepciones' en las DevTools."
+      />
+    </p>
+
+    <!-- This one must not be a module for 'pause on exceptions' to work as expected -->
+    <script src="./index.js"></script>
+  </body>
+</html>
