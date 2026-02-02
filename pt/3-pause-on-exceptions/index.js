@@ -5,12 +5,13 @@ const mostlyPrimes = [
 ];
 
 // Verifica se um número é primo.
-const isPrime = (num) => {
+function isPrime(num){
   for (let i = 2; i < num; i++) {
     if (num % i == 0) return false;
   }
   return true;
-};
+}
+
 
 for (let maybePrime of mostlyPrimes) {
   if (!isPrime(maybePrime)) {
